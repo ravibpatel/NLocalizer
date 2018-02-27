@@ -32,6 +32,15 @@ namespace NLocalizer
     /// </example>
     public class TranslationLocales : SortedDictionary<string, string>
     {
+        /// <inheritdoc />
+        public TranslationLocales() : this(StringComparer.InvariantCulture)
+        {
+        }
+
+        private TranslationLocales(IComparer<string> comparer) : base(comparer)
+        {
+        }
+
         /// <summary>
         /// Get list of locales names.
         /// </summary>

@@ -17,6 +17,8 @@
   Lesser General Public License for more details.
 
 *******************************************************************************/
+
+using System;
 using System.Collections.Generic;
 
 namespace NLocalizer
@@ -26,6 +28,14 @@ namespace NLocalizer
     /// </summary>
     public class TranslationProperties : SortedDictionary<string, TranslationProperty>
     {
+        /// <inheritdoc />
+        public TranslationProperties() : this(StringComparer.InvariantCulture)
+        {
+        }
+
+        private TranslationProperties(IComparer<string> comparer) : base(comparer)
+        {
+        }
 
         /// <summary>
         /// Check if static property to translate exists on this form.

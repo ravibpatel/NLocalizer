@@ -169,9 +169,13 @@ namespace NLocalizer
         /// <summary>
         /// Initializes a new instance of the <see cref="Translation"/> class and Init() this default values.
         /// </summary>
-        public Translation()
+        public Translation() : this(StringComparer.InvariantCulture)
         {
             Init();
+        }
+
+        private Translation(IComparer<string> comparer) : base(comparer)
+        {
         }
 
         /// <summary>
