@@ -27,17 +27,18 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\$(TargetFrameworkVersion)</OutputPath>
+    <OutputPath>build\lib\net40\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\$(TargetFrameworkVersion)\NLocalizer.XML</DocumentationFile>
+    <DocumentationFile>build\lib\net40\NLocalizer.XML</DocumentationFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>NLocalizer.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>NLocalizer.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -78,7 +79,8 @@
     <Content Include="RuntimeCodeTemplates.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NLocalizer.pfx" />
+    <None Include="build\NLocalizer.nuspec" />
+    <None Include="NLocalizer.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

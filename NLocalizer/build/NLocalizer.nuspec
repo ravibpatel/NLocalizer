@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NLocalizer</id>
+    <version>1.10.1</version>
+    <title>NLocalizer</title>
+    <authors>Chris Prusik,RBSoft</authors>
+    <owners>rbsoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/ravibpatel/NLocalizer/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ravibpatel/NLocalizer</projectUrl>
+    <description>NLocalizer is a class library for C# and VB.NET developers to localize their Classic Desktop Application projects using text files, so there will be no need to recompile the project to add a new language or to modify the existing one.</description>
+    <summary>NLocalizer is a class library that adds text based translations system to your Classic Desktop Application project.</summary>
+    <releaseNotes>//TODO</releaseNotes>
+    <copyright>Copyright © 2010-2018 Chris Prusik</copyright>
+    <language>en-US</language>
+    <tags>localize,.net,desktop,c#,vb.net,application,text,file</tags>
+  </metadata>
+</package>

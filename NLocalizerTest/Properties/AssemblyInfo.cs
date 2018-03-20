@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("RBSoft")]
 [assembly: AssemblyProduct("NLocalizerTest")]
-[assembly: AssemblyCopyright("Copyright © 2017 RBSoft")]
+[assembly: AssemblyCopyright("Copyright © 2018 RBSoft")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
